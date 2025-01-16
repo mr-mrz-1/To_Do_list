@@ -7,7 +7,7 @@ function retrive(){
 for (let i = 0; i < localStorage.length; i++) {
     let retrivedId = localStorage.key(i);
   
-        if(addbtn.innerHTML=="Add Course"){
+        if(addbtn.innerHTML=="Add"){
             let row=document.createElement('tr');
             let id=document.createElement('td');
             let cName=document.createElement('td');
@@ -42,7 +42,7 @@ function getRndInteger(min, max) {
 }
 
 function addInList(){
-    if(addbtn.innerHTML=="Add Course"){
+    if(addbtn.innerHTML=="Add"){
     let row=document.createElement('tr');
     let id=document.createElement('td');
     let cName=document.createElement('td');
@@ -75,7 +75,7 @@ function addInList(){
     else if(addbtn.innerHTML=="UPDATE"){
         selected.innerHTML=inputbox.value;
         localStorage.setItem(selectedId,inputbox.value);
-        addbtn.innerHTML="Add Course";
+        addbtn.innerHTML="Add";
         inputbox.value="";
     }
 }
